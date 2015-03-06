@@ -11,4 +11,6 @@ controllers.controller("RecipesController", ["$scope", "$routeParams", "$locatio
     )
   else
     $scope.recipes = []
+
+  $scope.view = (recipeId) -> $location.path("/recipes/#{recipeId}")
 ])
